@@ -1,0 +1,13 @@
+import Site from "../../components/Site";
+import { LanguageProvider } from "../../components/Language";
+import { translations } from "../../lib/translations";
+export default function Page() {
+  return (
+    <LanguageProvider locale="en">
+      <a className="skip" href="#main">
+        {translations.en.skip}
+      </a>
+      <Site />
+    </LanguageProvider>
+  );
+}
